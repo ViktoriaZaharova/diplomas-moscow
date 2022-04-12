@@ -1,0 +1,182 @@
+@import "vars"
+
+/*==========  footer  ==========*/
+footer
+  background: #fff
+  padding: 46px 0 0
+  font-size: 17px
+  .menu
+    width: 100%
+    li
+      margin: 0 146px 0 0
+  .contacts-line
+    margin: 24px 0 53px
+  .logo
+    margin: 0 0 8px
+
+.map
+  height: 292px
+  width: 100%
+  iframe
+    width: 100%
+    height: 100%
+
+.footer-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  padding: 0 0 0 45px
+
+.footer-section
+  margin: 38px 0 0
+  display: flex
+  align-items: stretch
+  width: 100%
+  border-top: 1px solid #E1E1E1
+
+.footer-col
+  padding: 20px 50px 0
+  border-right: 1px solid #E1E1E1
+  font-size: 17px
+  &:first-child
+    padding-left: 0
+  &:last-child
+    padding-right: 0
+    border: none
+  h4
+    margin: 0 0 9px
+    padding: 0 0 4px
+    font-size: 17px
+    font-weight: 600
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 60px
+      height: 2px
+      background: #BAD4FF
+
+.footer-menu
+  margin: 0 0 27px
+  width: 100%
+  &:last-child
+    margin: 0
+  li
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+    a
+      color: $title
+      &:hover
+        color: $accent
+
+/*==========  footer end  ==========*/
+
+
+
+/*==========  modal  ==========*/
+.modal-dialog
+  max-width: 800px
+
+.modal-content
+  padding: 42px 52px 37px 52px
+  border: none
+    radius: 0
+
+.modal-header
+  padding: 0
+  display: flex
+  align-items: center
+  margin: 0 0 37px
+  border: none
+  .close
+    z-index: 1
+    opacity: 1
+    cursor: pointer
+    margin: 0 0 0 auto
+    background: transparent
+    width: 24px
+    min-width: 24px
+    height: 24px
+    stroke: #1F2666
+    padding: 0
+
+.modal-title
+  font-weight: bold
+  font-size: 30px
+  color: #000000
+
+.modal-body
+  padding: 0
+
+.form-search
+  width: 100%
+  position: relative
+  margin: 0 0 17px
+
+  input
+    padding: 0 20px
+    font-size: 18px
+    font-weight: normal
+    color: #7B7B7B
+    font-family: $font
+    height: 71px
+    border: 1px solid #B7B7B7
+      radius: 5px
+    background: #fff
+  button
+    padding: 0
+    background: transparent
+    right: 23px
+    top: 50%
+    transform: translate(0,-50%)
+    width: 25px
+    height: 24px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+
+.block-scroll-vertical
+  overflow-y: auto
+  max-height: 484px
+  padding: 60px 40px 0 0
+  &::-webkit-scrollbar
+    width: 4px
+  &::-webkit-scrollbar-track
+    background: #E8E8E8
+  &::-webkit-scrollbar-thumb
+    background: #1F2666
+
+
+.cities-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  font-family: $font
+
+.cities-column
+  display: flex
+  align-items: flex-start
+  margin: 0 0 40px
+
+.letter-alphabet
+  margin: 0 20px 0 0
+  color: #1F2666
+  font-size: 30px
+  font-weight: bold
+  line-height: 35px
+
+.list-cities
+  font-size: 20px
+  line-height: 31px
+  &__links
+    color: #273329
+    &:hover
+      color: $accent
+/*==========  modal end  ==========*/

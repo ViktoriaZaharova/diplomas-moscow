@@ -1,0 +1,667 @@
+@import "vars"
+
+/*==========  section home  ==========*/
+.home-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.home-slider-wrapper
+  width: calc(100% - 440px)
+  padding: 0 25px 0 0
+  position: relative
+  .slider-nav-column
+    position: absolute
+    top: 0
+    right: 41px
+
+.home-slider
+  position: relative
+  background: linear-gradient(0deg, rgba(31, 38, 102, 0.74), rgba(31, 38, 102, 0.74)), url('../img/slide-bg.jpeg') no-repeat center, #1F2666
+    size: cover
+  color: #fff
+  padding: 100px 128px 77px
+
+.home-slider-title
+  font-size: 45px
+  font-weight: bold
+  margin: 0 0 94px
+
+.home-navigation
+  max-width: 440px
+  width: 100%
+  &__link
+    width: 100%
+    height: 100px
+    display: flex
+    align-items: center
+    color: #fff
+    margin: 0 0 20px
+    font-size: 20px
+    font-weight: bold
+    padding: 0 28px
+    background: linear-gradient(270deg, #7D87E2 -5.69%, #1F2666 60.76%)
+    &:hover
+      background: linear-gradient(-270deg, #7D87E2 -5.69%, #1F2666 60.76%)
+      color: #fff
+    &:last-child
+      margin: 0
+/*==========  section home end  ==========*/
+
+
+
+/*==========  section advantages ==========*/
+.advantages
+  margin: 38px 0 50px
+
+.advantages-box
+  display: flex
+  align-items: center
+  background: #F8F8F8
+  max-width: 502px
+  width: 100%
+  font-size: 18px
+  padding: 29px 56px
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 64px
+    height: 64px
+    min-width: 64px
+    margin: 0 42px 0 0
+    background: $title
+
+/*==========  section advantages end  ==========*/
+
+
+/*==========  section category-section ==========*/
+.category-section
+  .container
+    position: relative
+
+.decor
+  position: absolute
+  display: flex
+  align-items: center
+  justify-content: center
+
+.decor1
+  right: -40px
+  top: 320px
+
+.decor2
+  right: -100px
+  top: 60px
+
+.decor3
+  left: -50px
+  top: 30px
+
+.category-links
+  width: 100%
+  max-width: 354px
+  margin: 0 auto
+  min-height: 96px
+  display: flex
+  align-items: center
+  padding: 21px 44px 21px 60px
+  border: 1px solid #E8E8E8
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #C4C4C4
+  font-size: 20px
+  font-weight: 600
+  color: #4F6C9B
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 57px
+    height: 13px
+    fill: #fff
+    margin: 0 0 0 auto
+  &:hover
+    background: $title
+    color: #fff
+    border-color: $accent
+  &.active
+    background: $title
+    color: #fff
+    border-color: $accent
+
+/*==========  section category-section end  ==========*/
+
+
+
+/*==========  section products ==========*/
+.products
+  margin: 60px 0 50px
+
+.product-card
+  width: 100%
+  height: 100%
+  background: linear-gradient(180.04deg, rgba(255, 255, 255, 0.2) 0.03%, rgba(255, 255, 255, 0.2) 73.51%), #F8F8F8
+  border-radius: 15px
+  position: relative
+  padding: 32px 70px 34px
+  &__price
+    margin: 23px 0 0
+    padding: 15px 45px
+    background: #1F2666
+    border-radius: 7px
+    color: #fff
+    font-size: 20px
+    font-weight: 600
+    width: fit-content
+    display: flex
+    align-items: center
+    transition: .3s ease
+    &:hover
+      color: #fff
+      .icon-arrow
+        display: flex
+  &__img
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto
+    border-radius: 15px
+    max-width: 227px
+    width: 100%
+    height: 221px
+    img
+      max-height: 100%
+  &__body
+    width: 100%
+    padding: 24px 0 0
+  &__title
+    color: #000
+    font-size: 20px
+    margin: 0 0 13px
+    &:hover
+      color: $title
+  .box-text
+    color: #6D6D6D
+    font-size: 14px
+
+.icon-arrow
+  display: none
+  margin: 0 0 0 29px
+  align-items: center
+  justify-content: center
+  width: 29px
+  height: 14px
+  fill: #fff
+
+.availability-box
+  position: absolute
+  z-index: 1
+  top: 27px
+  right: 27px
+  background: #1857BD
+  border-radius: 15px
+  color: #fff
+  padding: 10px 20px
+  font-size: 14px
+  font-weight: 600
+
+.availability-box-order
+  background: #FF881A
+
+
+/*==========  section products end  ==========*/
+
+
+/*==========  section stages-order ==========*/
+.stages-order
+  padding: 37px 0
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(248,248,255,1) 100%)
+  .container
+    position: relative
+
+.decor5
+  left: -108px
+  top: -30px
+
+.decor6
+  right: -88px
+  top: 0
+
+.stages-order-box
+  background: rgba(255, 255, 255, 0.95)
+  padding: 29px 29px 29px 80px
+  max-width: 445px
+  width: 100%
+  margin: 0 0 0 auto
+  .box-text
+    max-width: 298px
+  h2
+    text-align: left
+  .box-text
+    color: #1F2666
+    font-size: 18px
+  .btn
+    margin: 45px 0 0
+  h3
+    font-weight: bold
+    font-size: 45px
+    margin: 0 0 45px
+    color: $title
+
+.stages-order-box-max
+  max-width: calc(100% - 445px - 445px - 23px - 23px)
+  margin: 0
+  .box-text
+    max-width: none
+
+.stages-order-wrapper
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+
+/*==========  section stages-order end  ==========*/
+
+
+
+/*==========  section professions ==========*/
+.professions
+  margin: 80px 0 60px
+  .decor1
+    top: 250px
+
+.decor4
+  top: 20px
+  left: 60px
+/*==========  section professions end  ==========*/
+
+
+/*==========  section  ==========*/
+.video-section
+  margin: 60px 0
+
+
+.video-block
+  width: 100%
+  position: relative
+  height: 401px
+  z-index: 1
+  overflow: hidden
+  &:before
+    content: ''
+    position: absolute
+    background: linear-gradient(0deg, rgba(31, 38, 102, 0.81), rgba(31, 38, 102, 0.81))
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.btn-play
+  position: absolute
+  z-index: 1
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+  width: 258px
+  height: 258px
+  background: rgba(31, 38, 102, 0.79)
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 4px solid #527BFF
+    radius: 50%
+
+  img
+    max-width: 84px
+    height: auto
+    object-fit: none
+    margin: 0 -4px 0 4px
+/*==========  section end  ==========*/
+
+
+
+/*==========  section seo-section ==========*/
+.seo-section
+  h2
+    text-align: left
+  
+.seo-block
+  margin: 80px 0 0
+  h3
+    font-weight: bold
+    margin: 0 0 45px
+    font-size: 40px
+  .box-text
+    font-size: 18px
+    line-height: 22px
+    font-weight: 400
+    max-width: 1620px
+
+.seo-section-content
+  padding: 0 0 0 30px
+/*==========  section seo-section end  ==========*/
+
+
+/*==========  section command ==========*/
+.command
+  margin: 80px 0 60px
+
+.command-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+.command-box
+  text-align: center
+  margin: 0 0 30px
+  padding: 20px 30px
+  font-size: 28px
+  max-width: 270px
+  width: 100%
+  h3
+    font-weight: bold
+    margin: 0 auto 12px
+  &__photo
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    margin: 0 auto 27px
+    width: 150px
+    height: 150px
+    border-radius: 50%
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+/*==========  section command end  ==========*/
+
+
+
+/*==========  section discount ==========*/
+.discount
+  margin: 80px 0 0
+
+.discount-wrapper
+  width: 100%
+  position: relative
+  background: linear-gradient(85.85deg, #3EBFB4 20.82%, #1F2666 100.65%)
+  color: #fff
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  &:before
+    content: ''
+    position: absolute
+    top: -81px
+    right: -61px
+    width: 197px
+    height: 197px
+    background: url("../img/star.svg") no-repeat center
+      size: 100%
+
+.discount-image
+  position: relative
+  z-index: 1
+  height: 100%
+  padding: 70px 0 70px 24px
+  max-width: 660px
+  width: 100%
+  &:before
+    content: ''
+    position: absolute
+    z-index: -1
+    left: 0
+    bottom: 0
+    height: 100%
+    width: 852px
+    background: url("../img/star2.svg") no-repeat left center
+      size: 100%
+
+.discount-content
+  position: relative
+  z-index: 1
+  width: calc(100% - 660px)
+  padding: 0 50px 0 0
+  h2
+    text-align: left
+    margin: 0 0 69px
+  .box-text
+    font-size: 20px
+    font-weight: bold
+    p
+      margin: 0 0 47px
+      &:last-child
+        margin: 0
+
+.form-discount
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 69px 0 0
+  label
+    padding: 0 10px 0 0
+    max-width: 32%
+  button
+    max-width: 32%
+    width: 100%
+    border-radius: 15px
+
+
+/*==========  section discount end  ==========*/
+
+
+/*==========  section popular-product-slider ==========*/
+.popular-product-slider
+  padding: 0 10px
+  .slick-slide
+    padding: 0 15px
+
+.seo-section-v2
+  margin: 60px 0
+  .seo-block
+    margin: 0 0 80px
+    &:last-child
+      margin: 0
+/*==========  section popular-product-slider end  ==========*/
+
+
+
+/*==========  section catalog ==========*/
+.catalog
+  margin: 80px 0 40px
+
+.sidebar
+  padding: 110px 0 0
+  max-width: 354px
+  width: 100%
+  .category-links
+    max-width: none
+    margin: 0 0 11px
+
+.catalog-category-slider
+  .slick-slide
+    padding: 0 15px
+
+.catalog-category
+  margin: 0 0 60px
+
+  h3
+    margin: 0 0 45px
+    font-weight: bold
+    font-size: 45px
+    padding: 0 0 0 10px
+
+/*==========  section catalog end  ==========*/
+
+
+/*==========  section product ==========*/
+.product-page
+  .product-card__price
+    margin: 18px 0 0
+
+.product-title
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  .availability-box
+    position: relative
+    top: 0
+    right: 0
+    transform: none
+    margin: 0 0 0 auto
+
+.product-info
+  max-width: 332px
+
+.list-characteristics
+  margin: 0 0 35px
+  font-size: 25px
+  p
+    font-weight: bold
+    min-width: 200px
+  li
+    display: flex
+    align-items: center
+    margin: 0 0 35px
+    &:last-child
+      margin: 0
+
+.product-category
+  margin: 0 0 2px
+  color: #6D6D6D
+  font-size: 14px
+
+.description-product
+  margin: 115px 0 0
+
+.description-product-box
+  margin: 0 0 30px
+  &:last-child
+    margin: 0
+  .box-text
+    font-size: 20px
+    color: #1F2666
+    line-height: 24px
+  h3
+    margin: 0 0 30px
+    font-size: 25px
+    font-weight: bold
+    color: #1F2666
+
+.product-content
+  max-width: 645px
+  width: 100%
+  margin: 0 auto
+
+
+.product-photo
+  .availability-box
+    display: none
+  .product-photo-item
+    background: linear-gradient(180.04deg, rgba(255, 255, 255, 0.2) 0.03%, rgba(255, 255, 255, 0.2) 73.51%), #F8F8F8
+    border-radius: 15px
+    display: flex
+    align-items: center
+    justify-content: center
+    max-width: 370px
+    width: 100%
+    margin: 0 auto
+    height: 457px
+    padding: 70px
+    img
+      max-height: 100%
+
+.product-preview
+  margin: 23px 0 0
+  .slick-slide
+    padding: 0 10px
+  .slick-next
+    right: -11px
+  .slick-prev
+    left: -11px
+  .product-photo-item
+    cursor: pointer
+
+.product-photo-item
+  height: 217px
+  width: 100%
+  background: linear-gradient(180.04deg, rgba(255, 255, 255, 0.2) 0.03%, rgba(255, 255, 255, 0.2) 73.51%), #F8F8F8
+  border-radius: 15px
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 34px
+  img
+    max-height: 100%
+/*==========  section product end  ==========*/
+
+
+
+/*==========  section reviews-slider ==========*/
+.reviews-v2
+  margin: 80px 0
+
+.reviews-slider
+  .slick-prev
+    left: -10px
+  .slick-next
+    right: -10px
+  .slick-slide
+    padding: 0 10px
+/*==========  section reviews-slider end  ==========*/
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+
+/*==========  section reviews ==========*/
+.reviews
+  margin: 80px 0 13px
+
+.reviews-box
+  width: 100%
+  height: 390px
+  background: #C4C4C4
+
+.reviews-wrapper
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 432px
+    background: linear-gradient(0deg, #FFFFFF 17.42%, rgba(255, 255, 255, 0) 75%)
+
+.btn-all
+  position: absolute
+  z-index: 1
+  left: 50%
+  transform: translate(-50%,0)
+  bottom: 132px
+
+/*==========  section reviews end  ==========*/
